@@ -4,15 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    
+    <title>Dashboard</title>
 </head>
 <body>
     <header>
-        <h1>DashBoard</h1>
-        <nav>
-            <a href="#">Buscar</a>
-        </nav>
+        <span class="logo">Mi Dashboard</span>
+        <span class="menu-btn">☰</span>
+        <input type="text" placeholder="Buscar..." class="search"/>
+        <div class="top-right">
+            <span>🔔</span>
+            <span>👤</span>
+        </div>
     </header>
-    
+
+    <div class="container">
+        <aside id="sidebar">
+            <nav>
+                <a href="#">Inicio</a>
+                <a href="#">Usuarios</a>
+                <a href="#">Productos</a>
+                <a href="#">Configuración</a>
+             </nav>
+        </aside>
+
+        <main>
+            <h2 class="titulo-estadisticas">Estadísticas Generales</h2>
+            <section class="cards">
+                <div class="card">Estadística 1</div>
+                <div class="card">Estadística 2</div>
+                <div class="card">Estadística 3</div>
+                <div class="card">Estadística 4</div>
+            </section>
+
+            <section>
+                <h2 class="titulo-lista-usuarios">Lista de usuarios</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Email</th>
+                            <th>Rol</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ana</td>
+                            <td>ana@email.com</td>
+                            <td>Admin</td>
+                        </tr>
+                        <tr>
+                            <td>Luis</td>
+                            <td>luis@email.com</td>
+                            <td>Editor</td>
+                        </tr>
+                        <tr>
+                            <td>Lionel</td>
+                            <td>lionel@gmail.com</td>
+                            <td>Cliente</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+
 </body>
 </html>

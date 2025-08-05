@@ -1,0 +1,148 @@
+* {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    header {
+      background: #333;
+      color: white;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-weight: bold;
+    }
+
+    .top-right {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    .search {
+        flex: 1; /* El input crece para ocupar el espacio del medio */
+        max-width: 400px;
+        padding: 0.5rem;
+    }
+
+    .container {
+      display: flex;
+      flex: 1;
+    }
+
+    aside {
+      background: #555;
+      color: white;
+      padding: 1rem;
+      width: 150px;
+      transition: transform 0.3s ease;
+    }
+
+    .sidebar-hidden {
+      transform: translateX(-100%);
+    }
+
+    nav a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      margin: 0.5rem 0;
+    }
+
+    /* ==== MAIN ==== */
+    main {
+      flex: 1;
+      padding: 1rem;
+    }
+
+    .titulo-estadisticas {
+        margin-bottom: 20px;
+    }
+
+    .cards {
+      display: grid;
+      gap: 1rem;
+      margin-bottom: 30px;
+    }
+
+    .card {
+      background: #eee;
+      padding: 1rem;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    .titulo-lista-usuarios {
+        margin-bottom: 5px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 2rem;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 0.5rem;
+      text-align: left;
+    }
+
+    /* ==== BOTÓN HAMBURGUESA ==== */
+    .menu-btn {
+      display: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+
+    /* ==== RESPONSIVE BREAKPOINTS ==== */
+
+    @media (max-width: 767px) {
+      .menu-btn {
+        display: block;
+      }
+
+      aside {
+        position: absolute;
+        height: 100%;
+        left: 0;
+        top: 60px;
+        z-index: 10;
+        background: #555;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+      .cards {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      aside {
+        width: 60px;
+      }
+
+      nav a {
+        font-size: 0.8rem;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .cards {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
