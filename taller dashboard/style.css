@@ -49,10 +49,6 @@
       transition: transform 0.3s ease;
     }
 
-    .sidebar-hidden {
-      transform: translateX(-100%);
-    }
-
     nav a {
       display: block;
       color: white;
@@ -125,19 +121,31 @@
       .cards {
         grid-template-columns: 1fr;
       }
+
+      .sidebar-hidden {
+        transform: translateX(-100%);
+      }
     }
 
     @media (min-width: 768px) and (max-width: 1023px) {
+      .menu-btn {
+        display: block;
+      }
+
       .cards {
         grid-template-columns: repeat(2, 1fr);
       }
 
       aside {
-        width: 60px;
+        width: 150px;
       }
 
       nav a {
         font-size: 0.8rem;
+      }
+
+      .sidebar-hidden {
+        transform: translateX(-100%);
       }
     }
 
