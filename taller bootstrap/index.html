@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jhonatan Desarrollador | Portafolio Web</title>
+  
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="bg-primary fixed-top shadow-sm">
+  <nav class="navbar navbar-expand-lg navbar-dark container">
+    <a class="navbar-brand fw-bold" href="#">Jhonatan Desarrollador</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav gap-3">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre mí</a></li>
+        <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section id="inicio" class="pt-5" style="padding-top: 100px;"> <!-- deja espacio para header fixed -->
+  <div class="container d-flex flex-column flex-lg-row align-items-center gap-5 min-vh-90">
+    
+    <img src="FC Barcelona.png" alt="Foto profesional de Jhonatan Desarrollador" 
+      class="rounded-circle shadow-lg img-fluid flex-shrink-0" style="max-width: 300px;"/>
+    
+    <div class="flex-grow-1">
+      <h2 class="display-4 fw-bold">
+        Hola, soy <span class="text-primary">Jhonatan</span>
+      </h2>
+      <p class="lead text-secondary mb-4">
+        Desarrollador web full-stack apasionado por crear experiencias digitales excepcionales que combinan funcionalidad y diseño elegante.
+      </p>
+      
+      <!-- Estadísticas -->
+      <div class="d-flex gap-4 mb-4 flex-wrap">
+        <div class="bg-white shadow-sm rounded-3 p-3 text-center flex-fill" style="min-width: 100px;">
+          <h3 class="text-primary fw-bold">50+</h3>
+          <p class="mb-0 text-secondary">Proyectos</p>
+        </div>
+        <div class="bg-white shadow-sm rounded-3 p-3 text-center flex-fill" style="min-width: 100px;">
+          <h3 class="text-primary fw-bold">3</h3>
+          <p class="mb-0 text-secondary">Años exp.</p>
+        </div>
+        <div class="bg-white shadow-sm rounded-3 p-3 text-center flex-fill" style="min-width: 100px;">
+          <h3 class="text-primary fw-bold">100%</h3>
+          <p class="mb-0 text-secondary">Satisfacción</p>
+        </div>
+      </div>
+      
+      <!-- Botones -->
+      <div class="d-flex gap-3 flex-wrap">
+        <a href="#proyectos" class="btn btn-primary btn-lg">Ver Proyectos</a>
+        <a href="#contacto" class="btn btn-outline-primary btn-lg">Contactar</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECCIÓN PROYECTOS -->
+<section id="proyectos" class="py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-3">Mis Proyectos Destacados</h2>
+    <p class="text-secondary mb-5 mx-auto" style="max-width: 600px;">
+      Una selección de trabajos que demuestran mis habilidades y pasión por el desarrollo
+    </p>
+    
+    <div class="row g-4 justify-content-center">
+      <!-- Proyecto 1 -->
+      <article class="col-sm-6 col-lg-4">
+        <div class="card shadow-sm h-100">
+          <div class="position-relative overflow-hidden" style="height: 250px;">
+            <img src="https://via.placeholder.com/400x250" alt="Captura tienda online" class="card-img-top object-fit-cover" style="height: 100%;"/>
+            <a href="#" class="btn btn-light position-absolute top-50 start-50 translate-middle opacity-0 hover-opacity-100 transition" 
+               aria-label="Ver proyecto de tienda online" style="transition: opacity 0.3s;">
+              Ver Proyecto
+            </a>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title h5 text-primary">Tienda Online Moderna</h3>
+            <p class="card-text text-secondary">
+              E-commerce completo con carrito de compras, pasarela de pagos y panel de administración. Desarrollado con tecnologías modernas.
+            </p>
+            <div class="mb-3">
+              <span class="badge bg-secondary me-1">HTML5</span>
+              <span class="badge bg-secondary me-1">CSS3</span>
+              <span class="badge bg-secondary me-1">JavaScript</span>
+              <span class="badge bg-secondary me-1">Node.js</span>
+            </div>
+            <a href="#" class="link-primary me-3">Demo en vivo</a>
+            <a href="#" class="link-primary">Ver código</a>
+          </div>
+        </div>
+      </article>
+      
+      <!-- Proyecto 2 -->
+      <article class="col-sm-6 col-lg-4">
+        <div class="card shadow-sm h-100">
+          <div class="position-relative overflow-hidden" style="height: 250px;">
+            <img src="https://via.placeholder.com/400x250" alt="Captura blog personal" class="card-img-top object-fit-cover" style="height: 100%;"/>
+            <a href="#" class="btn btn-light position-absolute top-50 start-50 translate-middle opacity-0 hover-opacity-100 transition" 
+               aria-label="Ver proyecto de blog personal" style="transition: opacity 0.3s;">
+              Ver Proyecto
+            </a>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title h5 text-primary">Blog Personal</h3>
+            <p class="card-text text-secondary">
+              Blog dinámico para compartir conocimientos y experiencias, construido con React y Markdown.
+            </p>
+            <div class="mb-3">
+              <span class="badge bg-secondary me-1">React</span>
+              <span class="badge bg-secondary me-1">Markdown</span>
+              <span class="badge bg-secondary me-1">CSS3</span>
+            </div>
+            <a href="#" class="link-primary me-3">Demo en vivo</a>
+            <a href="#" class="link-primary">Ver código</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Proyecto 3 -->
+      <article class="col-sm-6 col-lg-4">
+        <div class="card shadow-sm h-100">
+          <div class="position-relative overflow-hidden" style="height: 250px;">
+            <img src="https://via.placeholder.com/400x250" alt="Captura app móvil" class="card-img-top object-fit-cover" style="height: 100%;"/>
+            <a href="#" class="btn btn-light position-absolute top-50 start-50 translate-middle opacity-0 hover-opacity-100 transition" 
+               aria-label="Ver proyecto app móvil" style="transition: opacity 0.3s;">
+              Ver Proyecto
+            </a>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title h5 text-primary">App Móvil para Tareas</h3>
+            <p class="card-text text-secondary">
+              Aplicación multiplataforma para gestión de tareas con notificaciones push y sincronización en la nube.
+            </p>
+            <div class="mb-3">
+              <span class="badge bg-secondary me-1">Flutter</span>
+              <span class="badge bg-secondary me-1">Firebase</span>
+            </div>
+            <a href="#" class="link-primary me-3">Demo en vivo</a>
+            <a href="#" class="link-primary">Ver código</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Proyecto 4 -->
+      <article class="col-sm-6 col-lg-4">
+        <div class="card shadow-sm h-100">
+          <div class="position-relative overflow-hidden" style="height: 250px;">
+            <img src="https://via.placeholder.com/400x250" alt="Captura dashboard" class="card-img-top object-fit-cover" style="height: 100%;"/>
+            <a href="#" class="btn btn-light position-absolute top-50 start-50 translate-middle opacity-0 hover-opacity-100 transition" 
+               aria-label="Ver proyecto dashboard" style="transition: opacity 0.3s;">
+              Ver Proyecto
+            </a>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title h5 text-primary">Dashboard Analítico</h3>
+            <p class="card-text text-secondary">
+              Panel de control para visualización de métricas y datos en tiempo real con gráficos interactivos.
+            </p>
+            <div class="mb-3">
+              <span class="badge bg-secondary me-1">Vue.js</span>
+              <span class="badge bg-secondary me-1">D3.js</span>
+            </div>
+            <a href="#" class="link-primary me-3">Demo en vivo</a>
+            <a href="#" class="link-primary">Ver código</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- SECCIÓN HABILIDADES -->
+<section id="habilidades" class="py-5">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-3">Mis Habilidades</h2>
+    <p class="text-secondary mb-5 mx-auto" style="max-width: 600px;">
+      Tecnologías y herramientas que domino para crear soluciones web completas
+    </p>
+    
+    <div class="row justify-content-center g-4">
+      <div class="col-md-4">
+        <div class="card shadow-sm p-3 h-100">
+          <h3 class="h5 text-primary mb-3">Frontend</h3>
+          <ul class="list-unstyled text-start">
+            <li class="mb-3">
+              <strong>HTML5 & Semántica Web</strong>
+              <div class="progress" style="height: 8px;">
+                <div class="progress-bar bg-primary" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </li>
+            <li class="mb-3">
+              <strong>CSS3 & Diseño Responsivo</strong>
+              <div class="progress" style="height: 8px;">
+                <div class="progress-bar bg-primary" role="progressbar" style="width: 90%;"></div>
+              </div>
+            </li>
+            <li>
+              <strong>JavaScript ES6+</strong>
+              <div class="progress" style="height: 8px;">
+                <div class="progress-bar bg-primary" role="progressbar" style="width: 85%;"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- Backend -->
+      <div class="col-md-4">
+        <div class="card shadow-sm p-3 h-100">
+          <h3 class="h5 text-primary mb-3">Backend</h3>
+          <ul class="list-unstyled text-start">
+            <li class="mb-3">
+              <strong>Node.js & Express</strong>
+              <div class="progress" style="height: 8px;">
+                <div class="progress-bar bg-primary" role="progressbar" style="width: 80%;"></div>
+              </div>
+            </li>
+            <li class="mb-3">
+              <strong>Bases de Datos SQL/NoSQL</strong>
+              <div class="progress" style="height: 8px;">
+                <div class="progress-bar bg-primary" role="progressbar" style="width: 75%;"></div>
+              </div>
+            </li>
+            <li>
+              <strong>APIs RESTful</strong>
+              <div class="progress" style="height: 8px;">
+                <div class="progress-bar bg-primary" role="progressbar" style="width: 85%;"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- Herramientas -->
+      <div class="col-md-4">
+        <div class="card shadow-sm p-3 h-100">
+          <h3 class="h5 text-primary mb-3">Herramientas</h3>
+          <ul class="list-unstyled text-start">
+            <li class="mb-3">
+              <strong>Git & GitHub</strong>
+              <div class="progress" style="height: 8px;">
+                <div class="progress-bar bg-primary" role="progressbar" style="width: 90%;"></div>
+              </div>
+            </li>
+            <li class="mb-3">
+              <strong>Docker & Contenedores</strong>
+              <div class="progress" style="height: 8px;">
+                <div class="progress-bar bg-primary" role="progressbar" style="width: 70%;"></div>
+              </div>
+            </li>
+            <li>
+              <strong>CI/CD</strong>
+              <div class="progress" style="height: 8px;">
+                <div class="progress-bar bg-primary" role="progressbar" style="width: 65%;"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- Nueva categoría 1 -->
+      <div class="col-md-4">
+        <div class="card shadow-sm p-3 h-100">
+          <h3 class="h5 text-primary mb-3">Diseño</h3>
+          <ul class="list-unstyled text-start">
+            <li class="mb-3">
+              <strong>Figma & Adobe XD</strong>
+              <div class="progress" style="height: 8px;">
+                <div class="progress-bar bg-primary" role="progressbar" style="width: 80%;"></div>
+              </div>
+            </li>
+            <li>
+              <strong>Photoshop & Illustrator</strong>
+              <div class="progress" style="height: 8px;">
+                <div class="progress-bar bg-primary" role="progressbar" style="width: 75%;"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Nueva categoría 2 -->
+      <div class="col-md-4">
+        <div class="card shadow-sm p-3 h-100">
+          <h3 class="h5 text-primary mb-3">DevOps</h3>
+          <ul class="list-unstyled text-start">
+            <li class="mb-3">
+              <strong>AWS & Azure</strong>
+              <div class="progress" style="height: 8px;">
+                <div class="progress-bar bg-primary" role="progressbar" style="width: 70%;"></div>
+              </div>
+            </li>
+            <li>
+              <strong>Kubernetes & Terraform</strong>
+              <div class="progress" style="height: 8px;">
+                <div class="progress-bar bg-primary" role="progressbar" style="width: 60%;"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SECCIÓN CONTACTO -->
+<section id="contacto" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="fw-bold text-center mb-3">¡Trabajemos Juntos!</h2>
+    <p class="text-secondary text-center mb-5 mx-auto" style="max-width: 600px;">
+      ¿Tienes un proyecto en mente? Me encantaría escuchar tus ideas y ayudarte a hacerlas realidad.
+    </p>
+
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-5">
+        <div class="bg-white p-4 rounded shadow-sm">
+          <div class="d-flex align-items-center mb-4">
+            <div class="bg-primary text-white rounded-circle d-flex justify-content-center align-items-center" style="width:60px; height:60px; font-size: 2rem;">
+              📧
+            </div>
+            <div class="ms-3">
+              <h5>Email</h5>
+              <a href="mailto:juan@ejemplo.com" class="text-primary">jhonatan.981023@gmail.com</a>
+            </div>
+          </div>
+          <div class="d-flex align-items-center mb-4">
+      <div class="bg-primary text-white rounded-circle d-flex justify-content-center align-items-center" style="width:60px; height:60px; font-size: 2rem;">
+        🐱
+      </div>
+      <div class="ms-3">
+        <h5>GitHub</h5>
+        <a href="https://github.com/jhonatan981022" target="_blank" rel="noopener noreferrer" class="text-primary">
+          github.com/jhonatan981022
+        </a>
+      </div>
+    </div>
+          <!-- Otros datos de contacto con iconos similares -->
+        </div>
+      </div>
+      <div class="col-md-7">
+        <form action="#" method="POST" class="bg-white p-4 rounded shadow-sm">
+          <div class="mb-3">
+            <label for="nombre" class="form-label fw-bold">Nombre completo</label>
+            <input type="text" id="nombre" name="nombre" class="form-control" required placeholder="Tu nombre completo" />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label fw-bold">Email</label>
+            <input type="email" id="email" name="email" class="form-control" required placeholder="tu@email.com" />
+          </div>
+          <div class="mb-3">
+            <label for="asunto" class="form-label fw-bold">Asunto</label>
+            <select id="asunto" name="asunto" class="form-select" required>
+              <option value="">Selecciona un asunto</option>
+              <option value="proyecto">Nuevo proyecto</option>
+              <option value="colaboracion">Colaboración</option>
+              <option value="consulta">Consulta general</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="mensaje" class="form-label fw-bold">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5" class="form-control" required placeholder="Cuéntame sobre tu proyecto o idea..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Enviar Mensaje</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-secondary bg-gradient text-white py-5">
+  <div class="container">
+    <div class="row justify-content-between align-items-center">
+      <div class="col-md-6 mb-4 mb-md-0">
+        <h5 class="fw-bold">Contacto</h5>
+        <div class="d-flex align-items-center gap-3 mt-3">
+          <div class="bg-primary rounded-circle d-flex justify-content-center align-items-center" style="width:50px; height:50px; font-size:1.5rem;">
+            📧
+          </div>
+          <a href="mailto:juan@ejemplo.com" class="text-white text-decoration-none">jhonatan.981023@gmail.com</a>
+        </div>
+        <div class="d-flex align-items-center gap-3 mt-3">
+          <div class="bg-primary rounded-circle d-flex justify-content-center align-items-center" style="width:50px; height:50px; font-size:1.5rem;">
+            🐱
+          </div>
+          <a href="https://github.com/jhonatan981022" target="_blank" rel="noopener noreferrer" class="text-white text-decoration-none">github.com/jhonatan981022</a>
+        </div>
+      </div>
+      <div class="col-md-6 text-md-end">
+        <p class="mb-0">&copy; 2025 Jhonatan Desarrollador. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- Bootstrap JS Bundle (para componentes interactivos) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
